@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Captionza — inspiring quotes, captions and words for every mood.">
+<title>Captionza — Words That Speak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#"><span class="brand-mark">C</span><span>Captionza</span></a>
+  <nav>
+    <a href="#quotes">Quotes</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">WORDS THAT SPEAK</p>
+    <h1>Find the words<br><em>that feel like you.</em></h1>
+    <p class="hero-text">Discover thoughtful captions and words for every mood, moment and story — curated by category.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#quotes">Explore Quotes <span>→</span></a>
+      <button class="btn secondary" id="randomHero">Surprise Me</button>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="quote-symbol">“</div>
+    <p id="heroQuote">Your vibe is your signature. Make it unforgettable.</p>
+    <div class="quote-meta"><span>Captionza</span><span>✦</span></div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="section-head">
+    <div><p class="eyebrow">EDITOR'S PICK</p><h2>Quote of the day</h2></div>
+    <button class="text-btn" id="copyFeatured">Copy quote <span>⧉</span></button>
+  </div>
+  <article class="featured-card">
+    <div class="featured-icon">✦</div>
+    <blockquote id="featuredQuote">“Be so focused on becoming your best self that you forget to compare yourself with anyone else.”</blockquote>
+    <p>— Captionza Collection</p>
+  </article>
+</section>
+
+<section id="categories" class="categories">
+  <div class="section-head">
+    <div><p class="eyebrow">BROWSE BY MOOD</p><h2>What are you feeling?</h2></div>
+  </div>
+  <div class="category-grid" id="categoryGrid"></div>
+</section>
+
+<section id="quotes" class="quotes-section">
+  <div class="section-head quotes-head">
+    <div><p class="eyebrow">CURATED FOR YOU</p><h2>Latest quotes</h2></div>
+    <div class="filters" id="filters"></div>
+  </div>
+  <div class="quote-grid" id="quoteGrid"></div>
+  <button class="load-more" id="loadMore">Load more quotes</button>
+</section>
+
+<section class="cta">
+  <div>
+    <p class="eyebrow">YOUR WORDS MATTER</p>
+    <h2>One quote can change<br>the way a day feels.</h2>
+  </div>
+  <button class="btn light" id="randomCta">Give me a quote <span>↗</span></button>
+</section>
+
+<section id="about" class="about">
+  <p class="eyebrow">ABOUT CAPTIONZA</p>
+  <h2>Made for moments<br>worth putting into words.</h2>
+  <p>Captionza is a curated space for meaningful quotes, expressive captions and words that help you say what you feel — simply and beautifully.</p>
+</section>
+</main>
+
+<footer>
+  <a class="brand" href="#"><span class="brand-mark">C</span><span>Captionza</span></a>
+  <p>© 2026 Captionza · All Rights Reserved<br><strong>Designed &amp; Developed by Hossain Sadman Sakib Bilash</strong></p>
+  <div><a href="#quotes">Quotes</a><a href="#categories">Categories</a></div>
+</footer>
+<div class="toast" id="toast">Copied to clipboard</div>
+<script src="script.js"></script>
+</body>
+</html>

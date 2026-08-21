@@ -1,0 +1,92 @@
+:root{
+--ink:#15141a;--muted:#73717a;--paper:#faf9f7;--card:#fff;--line:#e8e5df;
+--accent:#7c3aed;--accent2:#a855f7;--soft:#f1ebff;--gold:#d6a64a;
+--shadow:0 18px 50px rgba(27,20,45,.08);--radius:22px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}
+a{text-decoration:none;color:inherit}.header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px);border-bottom:1px solid var(--line);background:rgba(250,249,247,.86);backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.5px}.brand-mark{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:var(--ink);color:#fff;font-family:Georgia,serif;font-style:italic}
+nav{display:flex;gap:30px;font-size:14px;color:var(--muted)}nav a:hover{color:var(--ink)}.icon-btn{border:1px solid var(--line);background:var(--card);border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:17px}
+main{overflow:hidden}.hero{max-width:1180px;margin:auto;padding:105px 24px 95px;display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:center}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--accent);margin:0 0 13px}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(50px,6.3vw,84px);line-height:1.03;letter-spacing:-3px;margin:0 0 25px}.hero h1 em{color:var(--accent);font-weight:600}.hero-text{font-size:18px;color:var(--muted);max-width:590px}.hero-actions{display:flex;gap:12px;margin-top:32px}.btn{border:0;border-radius:12px;padding:13px 20px;font:600 14px "DM Sans";cursor:pointer;display:inline-flex;gap:18px;align-items:center}.primary{background:var(--ink);color:white}.secondary{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.hero-card{background:linear-gradient(145deg,#f0e8ff,#fff);border:1px solid #e6dafa;border-radius:30px;padding:48px;min-height:390px;display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow);position:relative;transform:rotate(1.2deg)}
+.quote-symbol{font:700 100px/1 Georgia,serif;color:var(--accent2);height:70px}.hero-card p:not(.quote-meta){font-family:"Playfair Display",serif;font-size:30px;line-height:1.3;margin:20px 0 35px}.quote-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px}
+.featured,.categories,.quotes-section,.about{max-width:1180px;margin:auto;padding:70px 24px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.section-head h2,.about h2{font:700 38px/1.15 "Playfair Display",serif;letter-spacing:-1px;margin:0}.featured-card{background:var(--ink);color:white;border-radius:var(--radius);padding:48px;position:relative;overflow:hidden}.featured-card:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:1px solid rgba(255,255,255,.12);right:-80px;top:-80px}.featured-icon{color:#c084fc;font-size:25px}.featured-card blockquote{font:600 30px/1.35 "Playfair Display",serif;max-width:850px;margin:15px 0}.featured-card>p{color:#aaa;font-size:13px}.text-btn{border:0;background:none;font:600 13px "DM Sans";cursor:pointer;color:var(--muted)}
+.category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:20px 14px;text-align:center;cursor:pointer;transition:.25s}.cat:hover,.cat.active{transform:translateY(-4px);border-color:#d5c1ff;box-shadow:0 10px 25px rgba(50,30,80,.07)}.cat-icon{font-size:24px;margin-bottom:7px}.cat span{font-size:13px;font-weight:700}
+.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 13px;font:600 12px "DM Sans";cursor:pointer}.filter.active{background:var(--ink);color:white;border-color:var(--ink)}
+.quote-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:900px;margin:0 auto}.quote-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 34px;min-height:210px;display:flex;flex-direction:column;transition:.25s}.quote-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.tag{font-size:10px;font-weight:800;letter-spacing:1.4px;color:var(--accent);text-transform:uppercase}.quote-card blockquote{font:600 24px/1.45 "Playfair Display",serif;margin:22px 0;flex:1}.card-bottom{display:flex;justify-content:space-between;align-items:center;color:#aaa;font-size:11px}.copy{border:0;background:var(--soft);color:var(--accent);border-radius:9px;padding:7px 10px;cursor:pointer;font-weight:700}.load-more{display:block;margin:30px auto 0;border:1px solid var(--line);background:var(--card);padding:12px 22px;border-radius:11px;font:600 13px "DM Sans";cursor:pointer}
+.cta{max-width:1180px;margin:60px auto;padding:65px 70px;border-radius:28px;background:linear-gradient(120deg,#6d28d9,#9333ea);color:#fff;display:flex;align-items:center;justify-content:space-between}.cta .eyebrow{color:#e9d5ff}.cta h2{font:700 40px/1.1 "Playfair Display",serif;margin:0}.light{background:white;color:#5b21b6}.about{text-align:center;max-width:760px;padding-top:100px;padding-bottom:110px}.about h2{font-size:45px}.about>p:last-child{color:var(--muted);font-size:16px;margin-top:25px}
+footer{border-top:1px solid var(--line);padding:30px 5vw;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}footer>div{display:flex;gap:20px}footer .brand{color:var(--ink);font-size:17px}
+.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:11px 17px;border-radius:10px;font-size:13px;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+.dark{--ink:#f5f2ff;--muted:#a5a0ad;--paper:#111014;--card:#19171d;--line:#2b2730;--soft:#271d36}.dark .header{background:rgba(17,16,20,.86)}.dark .hero-card{background:linear-gradient(145deg,#251b34,#19171d);border-color:#3a2c4c}.dark .primary{background:#f5f2ff;color:#17141c}.dark .secondary{border-color:#39333e;color:#f5f2ff}.dark .brand-mark{background:#f5f2ff;color:#17141c}.dark .featured-card{background:#211e26}
+@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr;gap:45px;padding-top:70px}.hero-card{max-width:600px;margin:auto}.category-grid{grid-template-columns:repeat(3,1fr)}.quote-grid{grid-template-columns:1fr}.cta{margin:40px 24px;padding:45px 30px;gap:30px}.cta h2{font-size:32px}}
+@media(max-width:580px){.hero h1{font-size:50px;letter-spacing:-2px}.hero-text{font-size:16px}.hero-card{padding:32px;min-height:330px}.hero-card p:not(.quote-meta){font-size:25px}.section-head{align-items:flex-start;gap:15px;flex-direction:column}.section-head h2{font-size:32px}.category-grid{grid-template-columns:repeat(2,1fr)}.quote-grid{grid-template-columns:1fr}.featured-card{padding:30px}.featured-card blockquote{font-size:24px}.cta{flex-direction:column;align-items:flex-start}.about h2{font-size:37px}footer{flex-direction:column;gap:15px}}
+
+/* Category pages */
+.category-hero{max-width:1180px;margin:auto;padding:72px 24px 45px}
+.back-link{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;font-weight:700;margin-bottom:38px;transition:.2s}
+.back-link:hover{color:var(--accent);transform:translateX(-3px)}
+.category-title-wrap{display:flex;align-items:center;gap:28px}
+.category-icon-large{width:86px;height:86px;border-radius:24px;display:grid;place-items:center;background:var(--soft);border:1px solid #dfd2f8;color:var(--accent);font-size:38px;flex:0 0 auto}
+.category-hero h1{font:700 clamp(42px,6vw,68px)/1.05 "Playfair Display",serif;letter-spacing:-2px;margin:0 0 12px}
+.category-hero #categoryDescription{margin:0 0 13px;color:var(--muted);font-size:16px;max-width:680px}
+.category-count{display:inline-flex;padding:6px 11px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:11px;font-weight:800;color:var(--muted)}
+.category-quotes{padding-top:35px}
+.category-grid-list{max-width:900px;display:grid;grid-template-columns:1fr;gap:18px}
+.category-grid-list .quote-card{min-height:255px}
+.category-switch{max-width:1180px;margin:30px auto 80px;padding:55px 24px;border-top:1px solid var(--line);text-align:center}
+.category-switch h2{font:700 34px/1.15 "Playfair Display",serif;margin:0 0 25px}
+.category-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.category-links a{padding:11px 16px;border:1px solid var(--line);background:var(--card);border-radius:99px;font-size:13px;font-weight:700;transition:.2s}
+.category-links a:hover{border-color:#d5c1ff;color:var(--accent);transform:translateY(-2px)}
+.dark .category-icon-large{background:#241a33;border-color:#45305e}
+.dark .category-count,.dark .category-links a{background:#17151c;border-color:#302c37}
+@media(max-width:900px){
+ .category-grid-list{grid-template-columns:1fr}
+ .category-title-wrap{align-items:flex-start}
+}
+@media(max-width:600px){
+ .category-hero{padding:45px 20px 30px}
+ .back-link{margin-bottom:28px}
+ .category-title-wrap{gap:17px}
+ .category-icon-large{width:62px;height:62px;border-radius:18px;font-size:27px}
+ .category-hero h1{font-size:39px;letter-spacing:-1.3px}
+ .category-hero #categoryDescription{font-size:14px;line-height:1.5}
+ .category-grid-list{grid-template-columns:1fr;gap:14px}
+ .category-grid-list .quote-card{min-height:220px;padding:24px}
+ .category-grid-list .quote-card blockquote{font-size:21px}
+ .category-switch{padding:45px 20px;margin-bottom:45px}
+ .category-switch h2{font-size:29px}
+}
+
+
+/* Captionza: one caption per row */
+.captions-container,
+.caption-container,
+.captions-grid,
+.caption-grid,
+.posts-grid,
+.posts-container {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 100%;
+}
+
+.caption-card,
+.caption,
+.post-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Keep one caption per row on every screen size */
+@media (min-width: 768px) {
+  .captions-container,
+  .caption-container,
+  .captions-grid,
+  .caption-grid,
+  .posts-grid,
+  .posts-container {
+    grid-template-columns: 1fr !important;
+  }
+}

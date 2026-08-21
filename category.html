@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse Captionza category captions. Find the perfect words for every mood.">
+<title>Category Captions — Captionza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="category-page">
+<header class="header">
+  <a class="brand" href="index.html"><span class="brand-mark">C</span><span>Captionza</span></a>
+  <nav>
+    <a href="index.html#quotes">Quotes</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="index.html#about">About</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+</header>
+
+<main>
+<section class="category-hero">
+  <a class="back-link" href="index.html#categories">← All categories</a>
+  <div class="category-title-wrap">
+    <div class="category-icon-large" id="categoryIcon">✦</div>
+    <div>
+      <p class="eyebrow">CAPTIONZA COLLECTION</p>
+      <h1 id="categoryTitle">Category Captions</h1>
+      <p id="categoryDescription"></p>
+      <span class="category-count" id="categoryCount"></span>
+    </div>
+  </div>
+</section>
+
+<section class="quotes-section category-quotes">
+  <div class="section-head">
+    <div><p class="eyebrow">EXPLORE THE COLLECTION</p><h2>All captions</h2></div>
+  </div>
+  <div class="quote-grid category-grid-list" id="quoteGrid"></div>
+  <button class="load-more" id="loadMore">Load more captions</button>
+</section>
+
+<section class="category-switch">
+  <p class="eyebrow">KEEP EXPLORING</p>
+  <h2>Find words for another mood.</h2>
+  <div class="category-links">
+    <a class="category-nav-link" data-category="Attitude" href="category.html?category=Attitude">⚡ Attitude</a>
+    <a class="category-nav-link" data-category="Love" href="category.html?category=Love">♡ Love</a>
+    <a class="category-nav-link" data-category="Sad" href="category.html?category=Sad">☾ Sad</a>
+    <a class="category-nav-link" data-category="Motivation" href="category.html?category=Motivation">↗ Motivation</a>
+    <a class="category-nav-link" data-category="Life" href="category.html?category=Life">♢ Life</a>
+    <a class="category-nav-link" data-category="Self Love" href="category.html?category=Self%20Love">✿ Self Love</a>
+    <a class="category-nav-link" data-category="Success" href="category.html?category=Success">◆ Success</a>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="brand">Captionza</div>
+<p>© 2026 Captionza · All Rights Reserved<br><strong>Designed &amp; Developed by Hossain Sadman Sakib Bilash</strong></p>
+</footer>
+<div class="toast" id="toast">Copied to clipboard</div>
+<script src="script.js"></script>
+</body>
+</html>
